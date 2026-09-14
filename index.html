@@ -8,14 +8,15 @@
     <link rel="icon" type="image/png" href="favicon-32x32.png">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!-- Modern Dark Header -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <div class="logo">The Journey<span> Church</span></div>
+            <div class="logo">The Journey <span>Church</span></div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -25,57 +26,66 @@
         </div>
     </nav>
 
+    <!-- One Church Inspired Hero Banner -->
     <header id="home" class="hero-section">
+        <div class="hero-overlay"></div>
         <div class="hero-container">
-            <div class="hero-text">
+            <div class="hero-content">
                 <span class="subtitle">Welcome to Cleveland, TN</span>
-                <h1>The Joy is in the <span>Journey</span></h1>
-                <p>We are a Bible Driven Church. Join us as we grow together in Christ.</p>
+                <h1>The Joy is in the <span class="highlight-text">Journey</span></h1>
+                <p class="hero-lead">We are a Bible Driven Church. Join us this Sunday as we grow together in Christ.</p>
                 
-                <div class="service-times">
-                    <span class="time-badge"><i class="far fa-clock"></i> Sun 10:00 AM</span>
-                    <span class="time-badge"><i class="far fa-clock"></i> Wed 6:30 PM</span>
+                <div class="service-pills">
+                    <div class="pill"><i class="far fa-clock"></i> Sundays 10:00 AM</div>
+                    <div class="pill"><i class="far fa-clock"></i> Wednesdays 6:30 PM</div>
                 </div>
 
-                <div class="hero-btns">
-                    <a href="#contact" class="btn-primary">Plan Your Visit</a>
+                <div class="hero-actions">
+                    <a href="#contact" class="btn-primary">Visit Us</a>
                     <a href="https://www.youtube.com/@TheJourneyChurchofCleveland" target="_blank" class="btn-secondary">Watch Online</a>
                 </div>
             </div>
-            <div class="hero-image">
-                <img src="logo.jpg.jpg" alt="Journey Church Logo" class="main-logo">
+            <div class="hero-media">
+                <img src="logo.jpg.jpg" alt="Journey Church Logo" class="brand-logo">
             </div>
         </div>
     </header>
 
-    <section id="about" class="features">
-        <div class="feature-card">
-            <div class="icon">📖</div>
-            <h3>Bible Driven</h3>
-            <p>We focus on the grace of God through teaching and fellowship.</p>
+    <!-- Centered Pillars Section -->
+    <section id="about" class="features-section">
+        <div class="section-title">
+            <h2>Who We Are</h2>
         </div>
-        <div class="feature-card highlight">
-            <div class="icon">☕</div>
-            <h3>Community</h3>
-            <p>Come as you are. We have coffee and a warm welcome waiting.</p>
-        </div>
-        <div class="feature-card">
-            <div class="icon">🙌</div>
-            <h3>Worship</h3>
-            <p>Worship with us through music that inspires and lifts the spirit.</p>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="card-icon">📖</div>
+                <h3>Bible Driven</h3>
+                <p>We focus on the grace of God through teaching and fellowship.</p>
+            </div>
+            <div class="feature-card accent-card">
+                <div class="card-icon">☕</div>
+                <h3>Community</h3>
+                <p>Come as you are. We have coffee and a warm welcome waiting.</p>
+            </div>
+            <div class="feature-card">
+                <div class="card-icon">🙌</div>
+                <h3>Worship</h3>
+                <p>Worship with us through music that inspires and lifts the spirit.</p>
+            </div>
         </div>
     </section>
 
+    <!-- Location & Contact Footer -->
     <footer id="contact" class="footer">
-        <div class="footer-grid">
+        <div class="footer-container">
             <div class="footer-info">
                 <h3>Find Us</h3>
-                <p>3191 S Lee Hwy, McDonald<br>Cleveland, TN 37353</p>
-                <div class="social-icons">
-                    <a href="https://www.facebook.com/JourneyChurchCleveland/" target="_blank" class="facebook">
+                <p class="address">3191 S Lee Hwy, McDonald<br>Cleveland, TN 37353</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/JourneyChurchCleveland/" target="_blank" aria-label="Facebook">
                         <i class="fab fa-facebook-f"></i>
                     </a>
-                    <a href="https://www.youtube.com/@TheJourneyChurchofCleveland" target="_blank" class="youtube">
+                    <a href="https://www.youtube.com/@TheJourneyChurchofCleveland" target="_blank" aria-label="YouTube">
                         <i class="fab fa-youtube"></i>
                     </a>
                 </div>
@@ -84,7 +94,9 @@
                 <iframe src="https://www.google.com/maps/embed?pb=!4v1776146829366!6m8!1m7!1sx7peXYvTOWXmfMSlPdoGcA!2m2!1d35.1322779146228!2d-84.93734686500868!3f123.47756469212541!4f-1.674529315432224!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
-        <p class="copyright">© 2026 The Journey Church.</p>
+        <div class="copyright-bar">
+            <p>© 2026 The Journey Church.</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
